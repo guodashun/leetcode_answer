@@ -21,6 +21,19 @@ public:
             hashMap[nums[i]] = i;
         }
     }
+    // 如果数组有序，则可以用二分查找的方式解决
+    vector<int> twoSum(vector<int>& nums, int target) {
+        int left = 0, right = nums.size() - 1;
+        while(left < right) {
+            int sum = nums[left] + nums[right];
+            if (sum == target) return vector<int>{left, right};
+            else if (sum < target) {
+                left++;
+            } else if (sum > target) {
+                right--;
+            }
+        }
+    }
 };
 
 
