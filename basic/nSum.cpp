@@ -28,3 +28,5 @@ vector<vector<int>> nSumTarget(vector<int>& nums, int n, int start, int target) 
     }
     return res;
 }
+
+// 大致思路是迭代,但是总会有超时的问题
