@@ -7,7 +7,6 @@ public:
 
         int temp = 0;
         for (int i = n - 2; i >= 0; i--) {
-            // 记录 dp[i+1][j-1]
             int pre = 0;
             for (int j = i + 1; j < n; j++) {
                 temp = dp[j];
