@@ -12,3 +12,4 @@ Answers and notes 4 leetcode :)
 
 ### DB
 
+链表:  
